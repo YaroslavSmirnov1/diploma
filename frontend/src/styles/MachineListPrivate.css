@@ -1,0 +1,25 @@
+.div {
+    display: table-row;
+    height: 100%;
+}
+
+#filter1 {
+    padding-left: 4%;
+}
+
+.table1 {
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#but-muchitem1 {
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+
+#example-custom-modal-styling {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15%;
+}

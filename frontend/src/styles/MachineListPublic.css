@@ -1,0 +1,14 @@
+.div {
+    display: table-row;
+    height: 100%;
+}
+
+#filter1 {
+    padding-left: 4%;
+}
+
+.table1 {
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}

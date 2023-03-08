@@ -1,0 +1,32 @@
+from django.urls import path, re_path, include
+from .views import *
+
+urlpatterns = [
+    path('usgroup/', UserCroupView.as_view(), name='api_usergroup'),
+    re_path(r'^auth/', include('djoser.urls.authtoken')),
+    path('machinepublic/', MachineAPIViewPublic.as_view(), name='api_machineview'),
+    path('machine/', MachineAPIView.as_view(), name='api_machine'),
+    path('machine/<int:pk>/', MachineAPIViewDetail.as_view(), name='api_machinedetail'),
+    path('modelmachine/', ModelMachineAPIView.as_view(), name='api_modelmachinelist'),
+    path('modelmachine/<int:pk>/', ModelMachineDetailAPIView.as_view(), name='api_modelmachinedetail'),
+    path('modelengine/', ModelEngineAPIView.as_view(), name='api_modelengine'),
+    path('modelengine/<int:pk>/', ModelEngineDetailAPIView.as_view(), name='api_modelenginedetail'),
+    path('modeltransmission/', ModelTransmissionAPIView.as_view(), name='api_modeltransmission'),
+    path('modeltransmission/<int:pk>/', ModelTransmissionDetailAPIView.as_view(), name='api_modeltransmissiondetail'),
+    path('modeldriveaxle/', ModelDriveAxleAPIView.as_view(), name='api_modeldriveaxle'),
+    path('modeldriveaxle/<int:pk>/', ModelDriveAxleDetailAPIView.as_view(), name='api_modeldriveaxledetail'),
+    path('modelsteeringaxle/', ModelSteeringAxleAPIView.as_view(), name='api_modelsteeringaxle'),
+    path('modelsteeringaxle/<int:pk>/', ModelSteeringAxleDetailAPIView.as_view(), name='api_modelsteeringaxledetail'),
+    path('servicecompany/', ServiceCompanyAPIView.as_view(), name='api_servicecompany'),
+    path('servicecompany/<int:pk>/', ServiceCompanyDetailAPIView.as_view(), name='api_servicecompanydetail'),
+    path('typemaintenance/', TypeMaintenanceAPIView.as_view(), name='api_typemaintenance'),
+    path('typemaintenance/<int:pk>/', TypeMaintenanceDetailAPIView.as_view(), name='api_typemaintenancedetail'),
+    path('typefailure/', TypeFailureAPIView.as_view(), name='api_typefailure'),
+    path('typefailure/<int:pk>/', TypeFailureDetailAPIView.as_view(), name='api_typefailuredetail'),
+    path('recoverymethod/', RecoveryMethodAPIView.as_view(), name='api_recoverymethod'),
+    path('recoverymethod/<int:pk>/', RecoveryMethodDetailAPIView.as_view(), name='api_recoverymethoddetail'),
+    path('maintenance/', MaintenanceAPIView.as_view(), name='api_maintenance'),
+    path('maintenance/<int:pk>/', MaintenanceAPIViewDetail.as_view(), name='api_maintenancedetail'),
+    path('claim/', ClaimAPIView.as_view(), name='api_claim'),
+    path('claim/<int:pk>/', ClaimAPIViewDetail.as_view(), name='api_claimdetail'),
+]

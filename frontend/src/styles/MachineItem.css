@@ -1,0 +1,50 @@
+#example-custom-modal-styling-title {
+    padding-left: 15%;
+}
+
+#cont {
+    padding: 2% 5%;
+}
+
+#accor {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#accor-body {
+    text-align: center;
+}
+
+#but-muchitem1 {
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+}
+
+#but-muchitem2 {
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    padding-right: 2.5%;
+}
+
+#input_head {
+    word-wrap: break-word;
+    width: 14.5rem;
+    }
+
+#input_group {
+    padding: 1%;
+    word-wrap: break-word;
+}
+
+#button {
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    padding-right: 5%;
+}
+
+.table1 {
+    padding-top: 2%;
+}
